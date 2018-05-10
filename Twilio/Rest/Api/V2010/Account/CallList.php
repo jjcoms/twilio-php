@@ -35,6 +35,8 @@ class CallList extends ListResource
    */
   public function __construct(Version $version, $accountSid)
   {
+    var_dump($version);
+    
     parent::__construct($version);
 
     // Path Solution
@@ -100,7 +102,7 @@ class CallList extends ListResource
       var_dump($this->uri);
       var_dump($data);
       var_dump($payload);
-      
+
       die();
     }
 
