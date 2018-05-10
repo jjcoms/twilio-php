@@ -58,6 +58,8 @@ abstract class Domain {
                             $headers = array(), $user = null, $password=null,
                             $timeout=null) {
         $url = $this->absoluteUrl($uri);
+        echo "DOMAIN URL:";
+        var_dump($url);
         return $this->client->request(
             $method,
             $url,

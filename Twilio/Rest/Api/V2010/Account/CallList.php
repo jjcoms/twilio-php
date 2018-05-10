@@ -36,7 +36,7 @@ class CallList extends ListResource
   public function __construct(Version $version, $accountSid)
   {
     var_dump($version);
-    
+
     parent::__construct($version);
 
     // Path Solution
